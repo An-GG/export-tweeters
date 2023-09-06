@@ -17,7 +17,26 @@ function main() {
     				font-family 'My Font';
     				font-size: 21px;
     				color: white;`)
-    b.addEventListener("click",()=>{ navigator.clipboard.writeText(Object.keys(window.a).join('\n')) })
+    b.addEventListener("click",()=>{
+        let failed=[]
+        let passed=[]
+        for (let k in window.a) {
+            let links = window.a[k][1].getElementsByTagName("a")
+            let ts = []
+            for (let l of links) { ts.push(l.innerText.trim()) }
+            
+            if (!ts.includes(k.replace("/", "@"))) {
+                console.log(k.replace("/", "@"))
+                console.log(ts)
+                console.log(ts.includes(k.replace("/", "@")))
+                failed.push(k)
+            } else {
+                passed.push(k)
+            }
+
+        }
+        alert(failed.length + " usernames did not pass the vibe check: \n\n" + failed.join("\n") + "\n\n" + passed.length + " usernames seem valid and will be copied")
+        navigator.clipboard.writeText(k.join("\n")) })
 
     let a={}
     function clearAllInterval() {
@@ -57,7 +76,6 @@ function main() {
             console.log(keys)
 	    document.title=Object.keys(window.a).length 
 	    b.innerText="COPY LIST ("+keys.length+")"
-	    navigator.clipboard.writeText 
         }
     }
     setInterval(checkIfNewList, 100);
