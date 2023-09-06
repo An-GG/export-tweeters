@@ -12,14 +12,16 @@ function main() {
     function scrape() {
         let selector='section > div > div > div'
         for (let e of document.querySelectorAll(selector)) {
-            let links = e.getElementsByTagName('a')
-            refs=[]
-            for (let l of links) {
-                refs.push(l.href)
-            }
-            let path=(new URL(refs[0])).pathname
-            a[path]=[path, e, refs]
-           // console.log(a)
+            try {
+                let links = e.getElementsByTagName('a')
+                refs=[]
+                for (let l of links) {
+                    refs.push(l.href)
+                }
+                let path=(new URL(refs[0])).pathname
+                a[path]=[path, e, refs]
+                // console.log(a)
+            } catch(e) {}
             
         }
         return a
@@ -29,8 +31,6 @@ function main() {
     function checkIfNewList() {
         let res = scrape()
         let keys = Object.keys(res)
-        console.log(keys)
-        console.log(keys.length)
         if (window["keys_len"] != keys.length) {
             window["keys_len"] = keys.length
             console.log("Total ("+keys.length+") - New List - "+(new Date()))
