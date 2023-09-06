@@ -35,8 +35,10 @@ function main() {
             }
 
         }
-        alert(failed.length + " usernames did not pass the vibe check: \n\n" + failed.join("\n") + "\n\n" + passed.length + " usernames seem valid and will be copied")
-        navigator.clipboard.writeText(passed.join("\n")) })
+        navigator.clipboard.writeText(passed.join("\n")).then(()=>{
+                alert(failed.length + " usernames did not pass the vibe check: \n\n" + failed.join("\n") + "\n\n" + passed.length + " usernames seem valid and were be copied")
+            })
+        })
 
     let a={}
     function clearAllInterval() {
