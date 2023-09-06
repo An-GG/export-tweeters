@@ -16,8 +16,10 @@ javascript:(function()%7B(function()%7Bfunction%20main()%20%7B%0A%20%20%20%20con
 - Scroll through the entire list, the script will collect all the usernames it sees
 - hit the blue copy button once you've got the entire list
 
+
 > twitter is cringe so you might have trouble with the follower/following page not showing the full list
 > - nothing we can do about this at the moment. seems like elon decided on 50 as the current rate limit after consulting his magic 8 ball
+
 
 ## *Demo*
 
@@ -30,4 +32,5 @@ https://github.com/An-GG/export-tweeters/assets/20458990/0275cfa2-40ea-4c03-993d
 
 https://github.com/An-GG/export-tweeters/assets/20458990/29289346-af79-485c-8ea6-1cccbbf2cc7e
 
-
+> - also all the potential matches are tested against a robust vibe check to ensure they're actually a valid username, **so sometimes you'll need the counter to actually be 1 or 2 greater than the # of followers/following** if you want to make sure you got everything
+<image src="vibecheck.png"/>
