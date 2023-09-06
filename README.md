@@ -23,3 +23,11 @@ javascript:(function()%7B(function()%7Bfunction%20main()%20%7B%0A%20%20%20%20con
 
 
 
+https://github.com/An-GG/export-tweeters/assets/20458990/0275cfa2-40ea-4c03-993d-98df501c469e
+
+
+
+
+https://github.com/An-GG/export-tweeters/assets/20458990/29289346-af79-485c-8ea6-1cccbbf2cc7e
+
+
