@@ -34,3 +34,18 @@ https://github.com/An-GG/export-tweeters/assets/20458990/29289346-af79-485c-8ea6
 
 > - also all the potential matches are tested against a robust vibe check to ensure they're actually a valid username, **so sometimes you'll need the counter to actually be 1 or 2 greater than the # of followers/following** if you want to make sure you got everything
 <image src="vibecheck.png"/>
+
+
+## Modifying and Testing `./script.js`
+
+ `./run.sh` is my run command for mac. <br>
+just run this after making changes to script.js<br>
+
+then edit the bookmark in your browser and paste the new link. 
+
+```
+an@ans-MacBook-Air export-tweeters % ./run.sh
+Link text saved to bookmark_link.txt & copied to clipboard.
+Ready to paste.
+```
+
