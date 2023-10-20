@@ -25,12 +25,8 @@ javascript:(function()%7B(function()%7Bfunction%20main()%20%7B%0A%20%20%20%20con
 
 
 
-https://github.com/An-GG/export-tweeters/assets/20458990/0275cfa2-40ea-4c03-993d-98df501c469e
+https://github.com/An-GG/export-tweeters/assets/20458990/dac34e9c-bcbb-4ba4-87f7-d611ef1e06a4
 
-
-
-
-https://github.com/An-GG/export-tweeters/assets/20458990/29289346-af79-485c-8ea6-1cccbbf2cc7e
 
 > - also all the potential matches are tested against a robust vibe check to ensure they're actually a valid username, **so sometimes you'll need the counter to actually be 1 or 2 greater than the # of followers/following** if you want to make sure you got everything
 <image src="vibecheck.png"/>
